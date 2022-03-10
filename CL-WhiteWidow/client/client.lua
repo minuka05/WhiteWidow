@@ -3,11 +3,6 @@ local QBCore = exports['qb-core']:GetCoreObject()
 local isPickingUp, isProcessing = false, false
 local onDuty = false
 
-RegisterNetEvent("QBCore:Client:OnJobUpdate")
-AddEventHandler("QBCore:Client:OnJobUpdate", function(JobInfo)
-	PlayerData.job = JobInfo
-end)
-
 --// Blips \\--
 Citizen.CreateThread(function()
    for _, info in pairs(Config.BlipLocation) do
@@ -529,9 +524,7 @@ CreateThread(function()
 					event = "CL-WhiteWidowShop:Open",
 					icon = "fa fa-shop",
 					label = "Open Shop",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+					                    job = Config.Job,
 				},
 			},
 			distance = 1.0
@@ -551,9 +544,7 @@ CreateThread(function()
 					event = "CL-WhiteWidowShop:Menu:Open",
 					icon = "fa fa-shop",
 					label = "Open Vanding Machine",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.0
@@ -573,9 +564,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:PickUpWeed",
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
@@ -595,9 +584,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:PickUpWeed",
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
@@ -617,9 +604,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:PickUpWeed",
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
@@ -639,9 +624,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:PickUpWeed",
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
@@ -661,9 +644,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:PickUpWeed",
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
@@ -683,9 +664,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:PickUpWeedSkunk",
 					icon = "fa fa-cannabis",
 					label = "Pick Skunk",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
@@ -705,9 +684,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:PickUpWeedSkunk",
 					icon = "fa fa-cannabis",
 					label = "Pick Skunk",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
@@ -727,9 +704,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:PickUpWeedSkunk",
 					icon = "fa fa-cannabis",
 					label = "Pick Skunk",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
@@ -1013,9 +988,7 @@ CreateThread(function()
 					event = "CL-WhiteWidowDuty:On",
 					icon = "fa fa-clock",
 					label = "On/Off Duty",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.0
@@ -1079,9 +1052,7 @@ CreateThread(function()
 					event = "CL-WhiteWidow:ProcessJoints:Menu",
 					icon = "fa fa-smoking",
 					label = "To Roll Joints",
-					canInteract = function()
-						return Player.job.name == Config.Job
-					end,
+                    job = Config.Job,
 				},
 			},
 			distance = 1.2
