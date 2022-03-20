@@ -5,7 +5,7 @@ QBCore.Functions.CreateUseableItem("bong", function(source, item)
         local src = source
         local Player = QBCore.Functions.GetPlayer(src)
         TriggerClientEvent("CL-WhiteWidow:Client:Bong", src)
-     end                                                                 				
+    end                                                                 				
 end)
 
 --// Check Item For Process Cannabis \\--
@@ -60,10 +60,10 @@ AddEventHandler('CL-WhiteWidow:ProcessJoints', function()
     local skunk = Player.Functions.GetItemByName(Config.SkunkItemRecive)
     local rollingpaper = Player.Functions.GetItemByName(Config.RollingPaperItem)
     if cannabis ~= nil and rollingpaper ~= nil then
-        Player.Functions.RemoveItem(Config.WeedItemRecive, 1)
-        Player.Functions.RemoveItem(Config.RollingPaperItem, 1)
-        TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.RollingPaperItem], "remove")
-        TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.WeedItemRecive], "remove")
+            Player.Functions.RemoveItem(Config.WeedItemRecive, 1)
+            Player.Functions.RemoveItem(Config.RollingPaperItem, 1)
+            TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.RollingPaperItem], "remove")
+            TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.WeedItemRecive], "remove")
     elseif ogkush ~= nil and rollingpaper ~= nil then
         if ogkush ~= nil then
             Player.Functions.RemoveItem(Config.OgKushItemRecive, 1)
@@ -78,10 +78,10 @@ AddEventHandler('CL-WhiteWidow:ProcessJoints', function()
         TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.Ak47ItemRecive], "remove")
     else
         if skunk ~= nil and rollingpaper ~= nil then
-         Player.Functions.RemoveItem(Config.SkunkItemRecive, 1)
-         Player.Functions.RemoveItem(Config.RollingPaperItem, 1)
-         TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.SkunkItemRecive], "remove")
-         TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.RollingPaperItem], "remove")
+            Player.Functions.RemoveItem(Config.SkunkItemRecive, 1)
+            Player.Functions.RemoveItem(Config.RollingPaperItem, 1)
+            TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.SkunkItemRecive], "remove")
+            TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.RollingPaperItem], "remove")
         end
     end
 end)
@@ -102,10 +102,10 @@ AddEventHandler('CL-WhiteWidow:GrabCola', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
     if Player.PlayerData.money.cash >= Config.ColaPrice then
-	 Player.Functions.AddItem(Config.ColaItem, 1)
-     Player.Functions.RemoveMoney("cash", Config.ColaPrice)
-	 TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.ColaItem], "add")
-	 TriggerClientEvent('QBCore:Notify', src, 'Cola Successfully Bought', "success")          
+	    Player.Functions.AddItem(Config.ColaItem, 1)
+        Player.Functions.RemoveMoney("cash", Config.ColaPrice)
+	    TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.ColaItem], "add")
+	    TriggerClientEvent('QBCore:Notify', src, 'Cola Successfully Bought', "success")          
     else
         TriggerClientEvent('QBCore:Notify', src, 'You Dont Have Enough Cash !', "error")              
     end                                          				
@@ -117,10 +117,10 @@ AddEventHandler('CL-WhiteWidow:GrabSnack', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
     if Player.PlayerData.money.cash >= Config.SnackPrice then
-	 Player.Functions.AddItem(Config.SnackItem, 1)
-     Player.Functions.RemoveMoney("cash", Config.SnackPrice)
-	 TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.SnackItem], "add")
-	 TriggerClientEvent('QBCore:Notify', src, 'Snack Successfully Bought', "success")          
+	    Player.Functions.AddItem(Config.SnackItem, 1)
+        Player.Functions.RemoveMoney("cash", Config.SnackPrice)
+	    TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.SnackItem], "add")
+	    TriggerClientEvent('QBCore:Notify', src, 'Snack Successfully Bought', "success")          
     else
         TriggerClientEvent('QBCore:Notify', src, 'You Dont Have Enough Cash !', "error")              
     end                                          				
@@ -132,10 +132,10 @@ AddEventHandler('CL-WhiteWidow:GrabWater', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
     if Player.PlayerData.money.cash >= Config.WaterPrice then
-	 Player.Functions.AddItem(Config.WaterItem, 1)
-     Player.Functions.RemoveMoney("cash", Config.WaterPrice)
-	 TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.WaterItem], "add")
-	 TriggerClientEvent('QBCore:Notify', src, 'Water Successfully Bought', "success")          
+	    Player.Functions.AddItem(Config.WaterItem, 1)
+        Player.Functions.RemoveMoney("cash", Config.WaterPrice)
+	    TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.WaterItem], "add")
+	    TriggerClientEvent('QBCore:Notify', src, 'Water Successfully Bought', "success")          
     else
         TriggerClientEvent('QBCore:Notify', src, 'You Dont Have Enough Cash !', "error")              
     end                                          				
@@ -166,8 +166,7 @@ AddEventHandler('CL-WhiteWidow:ProcessSkunk', function()
 	local src = source
     local Player = QBCore.Functions.GetPlayer(src)
 	Player.Functions.RemoveItem(Config.SkunkItemPickUp, 1)
-	TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.SkunkItemPickUp], "remove")   
-                                                                 				
+	TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.SkunkItemPickUp], "remove")                                                                  				
 end)
 
 QBCore.Functions.CreateCallback('CL-WhiteWidow:HasItemProcessAk47', function(source, cb)

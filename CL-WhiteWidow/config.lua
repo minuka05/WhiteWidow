@@ -116,7 +116,7 @@ Config.BongLocations = {
 }
 
 Config.BlipLocation = {
-    {title="White Widow", colour=37, id=140, x = 188.2922, y = -241.0332, z = 54.070499},  -- White Widow
+    {title = "White Widow", colour = 37, id = 140, x = 188.2922, y = -241.0332, z = 54.070499},  -- White Widow
 }
 
 --// Shop Items You Can Add As Many As You Like \\--
