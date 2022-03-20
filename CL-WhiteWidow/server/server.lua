@@ -210,6 +210,14 @@ AddEventHandler('CL-WhiteWidow:ProcessOgKush', function()
 	TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.OgKushItemPickUp], "remove")                                                                    				
 end)
 
+RegisterServerEvent('CL-WhiteWidow:ProcessAk47')
+AddEventHandler('CL-WhiteWidow:ProcessAk47', function()
+	local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+	Player.Functions.RemoveItem(Config.Ak47ItemPickUp, 1)
+	TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.Ak47ItemPickUp], "remove")                                                                    				
+end)
+
 RegisterServerEvent('CL-WhiteWidow:ProcessCannabisAdd')
 AddEventHandler('CL-WhiteWidow:ProcessCannabisAdd', function()
 	local src = source
@@ -250,7 +258,7 @@ RegisterServerEvent('CL-WhiteWidow:pickUpWeed')
 AddEventHandler('CL-WhiteWidow:pickUpWeed', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
-	if TriggerClientEvent("QBCore:Notify", src, "You Picked Up Some Weed", "Success", 8000) then
+	if TriggerClientEvent("QBCore:Notify", src, "You Picked Up Some Weed", "success", 8000) then
 		Player.Functions.AddItem(Config.WeedItemPickUp, 1)
 		TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.WeedItemPickUp], "add")
 	end
@@ -260,7 +268,7 @@ RegisterServerEvent('CL-WhiteWidow:pickUpSkunk')
 AddEventHandler('CL-WhiteWidow:pickUpSkunk', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
-	if TriggerClientEvent("QBCore:Notify", src, "You Picked Up Some Skunk", "Success", 8000) then
+	if TriggerClientEvent("QBCore:Notify", src, "You Picked Up Some Skunk", "success", 8000) then
 		Player.Functions.AddItem(Config.SkunkItemPickUp, 1)
 		TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.SkunkItemPickUp], "add")
 	end
@@ -270,7 +278,7 @@ RegisterServerEvent('CL-WhiteWidow:pickUpAk47')
 AddEventHandler('CL-WhiteWidow:pickUpAk47', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
-	if TriggerClientEvent("QBCore:Notify", src, "You Picked Up Some AK-47", "Success", 8000) then
+	if TriggerClientEvent("QBCore:Notify", src, "You Picked Up Some AK-47", "success", 8000) then
 		Player.Functions.AddItem(Config.Ak47ItemPickUp, 1)
 		TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.Ak47ItemPickUp], "add")
 	end
@@ -280,7 +288,7 @@ RegisterServerEvent('CL-WhiteWidow:pickUpOgKush')
 AddEventHandler('CL-WhiteWidow:pickUpOgKush', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
-	if TriggerClientEvent("QBCore:Notify", src, "You Picked Up Some Og-Kush", "Success", 8000) then
+	if TriggerClientEvent("QBCore:Notify", src, "You Picked Up Some Og-Kush", "success", 8000) then
 		Player.Functions.AddItem(Config.OgKushItemPickUp, 1)
 		TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.OgKushItemPickUp], "add")
 	end
