@@ -524,7 +524,7 @@ CreateThread(function()
 					label = "Open Shop",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -551,7 +551,7 @@ CreateThread(function()
 					label = "Open Vanding Machine",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -578,7 +578,7 @@ CreateThread(function()
 					label = "Pick Cannabis",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -605,7 +605,7 @@ CreateThread(function()
 					label = "Pick Cannabis",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -632,7 +632,7 @@ CreateThread(function()
 					label = "Pick Cannabis",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -659,7 +659,7 @@ CreateThread(function()
 					label = "Pick Cannabis",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -686,7 +686,7 @@ CreateThread(function()
 					label = "Pick Cannabis",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -713,7 +713,7 @@ CreateThread(function()
 					label = "Pick Skunk",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -740,7 +740,7 @@ CreateThread(function()
 					label = "Pick Skunk",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -767,7 +767,7 @@ CreateThread(function()
 					label = "Pick Skunk",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -794,7 +794,7 @@ CreateThread(function()
 					label = "Pick Skunk",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -821,7 +821,7 @@ CreateThread(function()
 					label = "Pick Skunk",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -848,7 +848,7 @@ CreateThread(function()
 					label = "Pick AK-47",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -875,7 +875,7 @@ CreateThread(function()
 					label = "Pick AK-47",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -902,7 +902,7 @@ CreateThread(function()
 					label = "Pick AK-47",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -929,7 +929,7 @@ CreateThread(function()
 					label = "Pick AK-47",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -956,7 +956,7 @@ CreateThread(function()
 					label = "Pick AK-47",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -983,7 +983,7 @@ CreateThread(function()
 					label = "Pick Og-Kush",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -1010,7 +1010,7 @@ CreateThread(function()
 					label = "Pick Og-Kush",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -1037,7 +1037,7 @@ CreateThread(function()
 					label = "Pick Og-Kush",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -1064,7 +1064,7 @@ CreateThread(function()
 					label = "Pick Og-Kush",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -1091,7 +1091,7 @@ CreateThread(function()
 					label = "Pick Og-Kush",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -1117,13 +1117,6 @@ CreateThread(function()
 					icon = "fa fa-clock",
 					label = "On/Off Duty",
                     job = Config.Job,
-					canInteract = function()
-						if not onDuty then
-							return false
-						else
-							return true
-						end
-					end,
 				},
 			},
 			distance = 1.0
@@ -1165,7 +1158,7 @@ CreateThread(function()
 					label = "To Process Cannabis",
 					job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
@@ -1192,7 +1185,7 @@ CreateThread(function()
 					label = "To Roll Joints",
                     job = Config.Job,
 					canInteract = function()
-						if not onDuty then
+						if onDuty then
 							return false
 						else
 							return true
