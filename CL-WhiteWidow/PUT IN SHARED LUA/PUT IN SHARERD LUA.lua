@@ -13,18 +13,18 @@
 
 ["whitewidow"] = {
     label = "White Widow",
-    defaultDuty = true,
+    defaultDuty = false,
     grades = {
         ['0'] = {
-            label = 'Worker',
+            name = 'Worker',
             payment = 30,
         },
         ['1'] = {
-            label = 'Vice Boss',
+            name = 'Vice Boss',
             payment = 70,
         },
         ['2'] = {
-            label = 'Boss',
+            name = 'Boss',
             payment = 130,
         },
     }
