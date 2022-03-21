@@ -523,13 +523,13 @@ CreateThread(function()
 					icon = "fa fa-shop",
 					label = "Open Shop",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.0
@@ -550,13 +550,13 @@ CreateThread(function()
 					icon = "fa fa-shop",
 					label = "Open Vanding Machine",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.0
@@ -577,13 +577,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -604,13 +604,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -631,13 +631,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -658,13 +658,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -685,13 +685,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Cannabis",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -712,13 +712,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Skunk",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -739,13 +739,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Skunk",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -766,13 +766,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Skunk",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -793,13 +793,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Skunk",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.3
@@ -820,13 +820,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Skunk",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.3
@@ -847,13 +847,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick AK-47",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -874,13 +874,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick AK-47",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -901,13 +901,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick AK-47",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -928,13 +928,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick AK-47",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -955,13 +955,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick AK-47",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -982,13 +982,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Og-Kush",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -1009,13 +1009,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Og-Kush",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -1036,13 +1036,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Og-Kush",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -1063,13 +1063,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Og-Kush",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -1090,13 +1090,13 @@ CreateThread(function()
 					icon = "fa fa-cannabis",
 					label = "Pick Og-Kush",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -1157,13 +1157,13 @@ CreateThread(function()
 					icon = "fa fa-smoking",
 					label = "To Process Cannabis",
 					job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
@@ -1184,13 +1184,13 @@ CreateThread(function()
 					icon = "fa fa-smoking",
 					label = "To Roll Joints",
                     job = Config.Job,
-					canInteract = function()
-						if onDuty then
-							return false
-						else
-							return true
-						end
-					end,
+				canInteract = function()
+					if not onDuty then
+						return false
+					else
+						return true
+					end
+				end,
 				},
 			},
 			distance = 1.2
