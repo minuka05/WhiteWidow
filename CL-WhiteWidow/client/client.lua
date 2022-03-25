@@ -281,7 +281,7 @@ function SmokingBongEffect()
 end
 
 --// WhiteWidows Garage \\--
-function SpawnVehicle(vehicle)
+function SpawnBaller(vehicle)
     local coords = { ['x'] = 199.30825, ['y'] = -269.8516, ['z'] = 49.924686, ['h'] = 246.63543 }
     QBCore.Functions.SpawnVehicle(vehicle, function(veh)
         SetVehicleNumberPlateText(veh, "WHITE	"..tostring(math.random(1000, 9999)))
