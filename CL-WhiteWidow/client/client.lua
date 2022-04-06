@@ -1282,8 +1282,8 @@ function ProcessWeedAk47()
 		disableMouse = false,
 		disableCombat = true,
 	}, {}, {}, {}, function()
+		TriggerServerEvent('CL-WhiteWidow:ProcessAddAk47')
 		ClearPedTasks(GetPlayerPed(-1))
-		TriggerServerEvent('CL-WhiteWidow:ProcessAk47Add')
 	end, function()
 		ClearPedTasks(GetPlayerPed(-1))
 	end)

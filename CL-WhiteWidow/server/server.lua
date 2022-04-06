@@ -244,8 +244,8 @@ AddEventHandler('CL-WhiteWidow:ProcessOgKushAdd', function()
 	TriggerClientEvent('QBCore:Notify', src, 'Og-Kush Processed Successfully', "success")                                                                         				
 end)
 
-RegisterServerEvent('CL-WhiteWidow:ProcessAk47Add')
-AddEventHandler('CL-WhiteWidow:ProcessAK47Add', function()
+RegisterServerEvent('CL-WhiteWidow:ProcessAddAk47')
+AddEventHandler('CL-WhiteWidow:ProcessAddAk47', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
 	Player.Functions.AddItem(Config.Ak47ItemRecive, math.random(1,3))
