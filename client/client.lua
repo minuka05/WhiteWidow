@@ -282,9 +282,9 @@ end
 
 --// WhiteWidows Garage \\--
 function SpawnBaller(vehicle)
-    local coords = { ['x'] = 199.30825, ['y'] = -269.8516, ['z'] = 49.924686, ['h'] = 246.63543 }
-    QBCore.Functions.SpawnVehicle(vehicle, function(veh)
-        SetVehicleNumberPlateText(veh, "WHITE	"..tostring(math.random(1000, 9999)))
+    local coords = { ['x'] = 189.7892, ['y'] = -256.554, ['z'] =  48.851, ['h'] = 69.54 }
+    QBCore.Functions.SpawnVehicle("baller", function(veh)
+        SetVehicleNumberPlateText(veh, "WHITE "..tostring(math.random(1000, 9999)))
         exports['LegacyFuel']:SetFuel(veh, 100.0)
         SetVehicleCustomPrimaryColour(veh, 255,255,255)
         SetEntityHeading(veh, coords.h)
@@ -336,6 +336,7 @@ end)
 RegisterNetEvent("WhiteWidow:garage")
 AddEventHandler("WhiteWidow:garage", function()
 	SpawnBaller(Config.Vehicle)
+	print(Config.Vehicle)
 end)
 
 CreateThread(function()
@@ -345,11 +346,11 @@ CreateThread(function()
         local letSleep = true        
 
         if PlayerJob ~= nil and PlayerJob.name == Config.Job then
-            if (GetDistanceBetweenCoords(plyCoords.x, plyCoords.y, plyCoords.z, 196.96069, -268.2592, 50.046707, true) < 10) then
+            if (GetDistanceBetweenCoords(plyCoords.x, plyCoords.y, plyCoords.z, 183.6955, -254.265, 49.537, true) < 10) then
                 letSleep = false
-                DrawMarker(2, 196.96069, -268.2592, 50.046707, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2, 0.15, 0, 0, 0, 222, false, false, false, true, false, false, false)
-				if (GetDistanceBetweenCoords(plyCoords.x, plyCoords.y, plyCoords.z, 196.96069, -268.2592, 50.046707, true) < 1.5) then
-                    DrawText3D(196.96069, -268.2592, 50.046707, "~g~E~w~ - White Widow Garage") 
+                DrawMarker(2, 183.6955, -254.265, 49.537, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2, 0.15, 0, 0, 0, 222, false, false, false, true, false, false, false)
+				if (GetDistanceBetweenCoords(plyCoords.x, plyCoords.y, plyCoords.z, 183.6955, -254.265, 49.537, true) < 1.5) then
+                    DrawText3D(183.6955, -254.265, 49.537, "~g~E~w~ - White Widow Garage") 
                     if IsControlJustReleased(0, 38) then
                         TriggerEvent("WhiteWidow:Garage:Menu")
                     end

@@ -1,50 +1,33 @@
 Config = Config or {}
 
 Config.UseBlips = true
-
 Config.PolyZone = false
 
 Config.OgKushItemPickUp = 'og-kush'
-
 Config.Job = 'whitewidow'
-
 Config.OgKushItemRecive = 'weed_og-kush'
-
 Config.Ak47ItemPickUp = 'ak-47'
-
 Config.Ak47ItemRecive = 'weed_ak47'
-
 Config.SkunkItemPickUp = 'skunk'
-
 Config.SkunkItemRecive = 'weed_skunk'
-
 Config.WeedItemPickUp = 'cannabis'
-
 Config.WeedItemRecive = 'weed4g'
-
 Config.ScissorsItem = 'weedscissors'
 
-Config.RollingPaperItem = 'rollingpaper'
+Config.ColaContextPrice = "2$"
+Config.ColaItem = 'cocacola'
 
-Config.ColaPrice = 10
-
-Config.ColaContextPrice = "10$"
-
-Config.ColaItem = 'kurkakola'
-
-Config.SnackPrice = 12
-
-Config.SnackItem = 'twerks_candy'
-
-Config.SnackContextPrice = "12$"
-
-Config.WaterPrice = 7
+Config.SnackItem = 'candy_twix'
+Config.SnackContextPrice = "0.9$"
 
 Config.WaterItem = 'water'
-
-Config.WaterContextPrice = "7$"
-
+Config.WaterContextPrice = "2$"
 Config.BongItem = "bong"
+
+Config.RollingPaperItem = 'rollingpaper'
+Config.ColaPrice = 2
+Config.WaterPrice = 2
+Config.SnackPrice = 0.9
 
 Config.UsableItemBong = false --// Want The Bong As A Usable Item? \\--
 
@@ -113,6 +96,10 @@ Config.BongLocations = {
         ['poly1'] = 1.2,
         ['poly2'] = 1.5,
     }, 
+}
+
+Config.Vehicle = {
+    ["trash2"] = "Garbage Truck",
 }
 
 Config.BlipLocation = {
